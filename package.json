@@ -1,0 +1,13 @@
+{
+  "name": "kusen-upvc-evan-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "site:generate": "node tools/site-generator/generate.mjs",
+    "site:generate:dry-run": "node tools/site-generator/generate.mjs --dry-run"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.12.1",
+    "parse5": "^7.2.1"
+  }
+}

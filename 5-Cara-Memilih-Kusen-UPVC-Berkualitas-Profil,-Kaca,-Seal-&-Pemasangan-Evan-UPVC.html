@@ -360,7 +360,7 @@
       *, *::before, *::after { transition-duration: .01ms !important; }
     }
   </style>
-</head>
+<style>.nav-dropdown{position:relative}.dropdown-menu{display:none;position:absolute;top:100%;left:0;min-width:210px;background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:8px;box-shadow:0 12px 30px rgba(11,31,51,.12);list-style:none;z-index:20}.nav-dropdown:hover .dropdown-menu,.nav-dropdown:focus-within .dropdown-menu{display:block}.dropdown-menu li{margin:0}.dropdown-menu a{display:block;padding:9px 12px;border-radius:7px}.dropdown-menu a:hover{background:#eef3f8}.mobile-product-menu{margin:0 0 8px}.mobile-product-menu>summary{padding:10px 12px;background:#f8fafc;color:#334155;border-radius:10px;font-size:.85rem;font-weight:700;cursor:pointer;list-style:none}.mobile-product-menu>summary::-webkit-details-marker{display:none}.mobile-product-menu>a{display:block;padding:9px 12px}</style></head>
 <body>
   <header>
     <div class="container nav-wrapper">
@@ -372,13 +372,13 @@
         </div>
       </a>
       <ul class="nav-links">
-        <li><a href="index.html#profil">Profil Kami</a></li>
+        <li><a href="tentang-kami.html#profil">Profil Kami</a></li>
         <li><a href="index.html#keunggulan">Keunggulan</a></li>
-        <li><a href="index.html#katalog">Katalog Produk</a></li>
-        <li><a href="index.html#galeri">Galeri Foto</a></li>
-        <li><a href="index.html#cara-order">Cara Order</a></li>
+        <li><a href="katalog.html">Katalog Produk</a></li><li class="nav-dropdown"><a href="katalog.html">Produk</a><ul class="dropdown-menu"><li><a href="pintu.html">Pintu UPVC</a></li><li><a href="jendela.html">Jendela UPVC</a></li></ul></li>
+        <li><a href="galeri.html">Galeri Foto</a></li>
+        <li><a href="tentang-kami.html#cara-order">Cara Order</a></li>
         <li><a href="index.html#artikel">Tips &amp; Artikel</a></li>
-        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="tentang-kami.html#faq">FAQ</a></li>
       </ul>
     </div>
   </header>
@@ -511,7 +511,7 @@
       </summary>
       <div class="menu-popup-box">
         <div class="menu-popup-title">🧭 Pilih Tujuan:</div>
-        <a href="https://kusenupvcevan.com/#katalog">🪟 Katalog Produk</a>
+        <details class="mobile-product-menu"><summary>Produk UPVC</summary><a href="pintu.html">Pintu UPVC</a><a href="jendela.html">Jendela UPVC</a></details><a href="https://kusenupvcevan.com/#katalog">🪟 Katalog Produk</a>
         <a href="https://kusenupvcevan.com/#galeri">📸 Galeri Foto Pemasangan</a>
         <a href="https://kusenupvcevan.com/#profil">ℹ️ Profil Evan UPVC</a>
         <a href="https://kusenupvcevan.com/#lokasi">📍 Peta Lokasi Workshop (Map)</a>
