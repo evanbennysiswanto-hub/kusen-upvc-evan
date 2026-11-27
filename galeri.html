@@ -1482,6 +1482,27 @@ img{max-width:100%}
  .nav-dropdown.is-open>.dropdown-menu{display:block}
  .dropdown-menu a{white-space:normal}
 }
+</style><style>
+/* Galeri: foto di atas, keterangan di panel putih di bawah foto */
+.gallery-section{padding-bottom:96px}
+.gallery-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:28px!important;align-items:stretch}
+.gallery-item{display:flex}
+.gallery-card{display:flex!important;flex-direction:column;width:100%;height:auto!important;min-height:0!important;background:#fff;border:1px solid #e1e9f1;border-radius:16px;box-shadow:0 4px 18px rgba(11,31,51,.06);overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+.gallery-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(11,31,51,.11)}
+.gallery-media{position:relative;overflow:hidden;background:#e9f0f6;flex:none}
+.gallery-card .gallery-media img{display:block;width:100%;height:auto!important;aspect-ratio:4/3;object-fit:cover;object-position:center;cursor:zoom-in;transition:transform .45s ease}
+.gallery-card:hover .gallery-media img{transform:scale(1.04)}
+.gallery-card .gallery-overlay{position:static!important;display:flex;flex-direction:column;flex:1;background:#fff!important;padding:18px 20px 20px!important;color:#40556b}
+.gallery-card .gallery-cat{align-self:flex-start;display:inline-block;margin:0 0 10px;padding:4px 11px;border-radius:999px;background:#e8f3fb;color:#075985;font-size:.78rem;font-weight:700;letter-spacing:.01em;text-transform:none}
+.gallery-card .gallery-overlay h2{font-size:clamp(1.02rem,.95rem + .35vw,1.18rem)!important;line-height:1.3;letter-spacing:-.02em;font-weight:700;color:#0b1f33!important;margin:0 0 8px;min-height:2.6em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.gallery-card .gallery-overlay p{font-size:.92rem;line-height:1.6;color:#526a80!important;margin:0 0 16px;flex:1}
+.gallery-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-top:auto;padding-top:14px;border-top:1px solid #eaf0f6}
+.gallery-link{display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.9rem;color:#0878b9;text-decoration:none}
+.gallery-link:hover{color:#075985;text-decoration:underline;text-underline-offset:4px}
+.gallery-wa{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;border:1px solid #20b96b;border-radius:10px;color:#0d6b3e;font-weight:700;font-size:.9rem;text-decoration:none;background:#fff;transition:background .2s ease}
+.gallery-wa:hover{background:#e9f9f0}
+@media(max-width:900px){.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:22px!important}}
+@media(max-width:560px){.gallery-grid{grid-template-columns:1fr!important}.gallery-card{height:auto!important}.gallery-card .gallery-overlay h2{min-height:0}}
 </style></head><body><header><div class="container nav-wrapper"><a class="brand-logo" href="index.html" aria-label="Beranda Evan UPVC"><img alt="Gambar logo evan upvc - hasil karya Evan UPVC" class="logo-icon" decoding="async" src="images/logo-evan-upvc.png" loading="lazy" width="1024" height="559"><div class="brand-text"><span class="brand-title">EVAN <span>UPVC</span></span><span class="brand-subtitle">LUXURY WINDOWS &amp; DOORS</span></div></a><nav class="site-navigation" aria-label="Navigasi utama"><button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="mobile-nav-icon" aria-hidden="true">&#9776;</span><span>Menu</span></button><ul class="nav-links" id="primary-navigation"><li><a href="index.html">Beranda</a></li><li class="nav-dropdown"><div class="nav-dropdown-controls"><a href="katalog.html">Produk</a><button class="nav-dropdown-toggle" type="button" aria-label="Buka submenu Produk" aria-expanded="false" aria-controls="product-submenu"><span aria-hidden="true">&#9662;</span></button></div><ul class="dropdown-menu" id="product-submenu"><li><a href="pintu.html">Pintu UPVC</a></li><li><a href="jendela.html">Jendela UPVC</a></li></ul></li><li><a href="katalog.html">Katalog</a></li><li><a href="galeri.html" aria-current="page">Galeri Foto</a></li><li><a href="tentang-kami.html">Tentang Kami</a></li><li><a href="artikel.html">Tips &amp; Artikel</a></li><li><a href="tentang-kami.html#lokasi">Lokasi</a></li></ul></nav></div></header><main><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Beranda</a></li><li aria-current="page">Galeri Foto UPVC</li></ol></nav></div><section class="section-padding gallery-section" id="galeri">
 <div class="container">
 <div class="section-title">
@@ -1500,72 +1521,96 @@ img{max-width:100%}
 <!-- FOTO 1: Jendela -->
 <div class="gallery-item" data-category="jendela">
 <div class="gallery-card">
-<img alt="Jendela jungkit UPVC dengan bukaan luar dari sisi bawah" decoding="async" height="728" loading="lazy" src="images/jendela-jungkit-upvc-2.jpeg" width="1040" role="button" tabindex="0" aria-label="Perbesar foto jendela jungkit UPVC" onclick="openGalleryLightbox(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGalleryLightbox(this)}"/>
+<div class="gallery-media"><img alt="Jendela jungkit UPVC dengan bukaan luar dari sisi bawah" decoding="async" height="728" loading="lazy" src="images/jendela-jungkit-upvc-2.jpeg" width="1040" role="button" tabindex="0" aria-label="Perbesar foto jendela jungkit UPVC" onclick="openGalleryLightbox(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGalleryLightbox(this)}"/></div>
 <div class="gallery-overlay">
 <span class="gallery-cat">Jendela UPVC</span>
 <h2>Jendela Jungkit (Awning)</h2>
 <p>Referensi model dan hasil pemasangan jendela jungkit UPVC.</p>
+<div class="gallery-actions">
+<a class="gallery-link" href="jendela.html">Lihat detail produk</a>
+<a class="gallery-wa" href="https://wa.me/6285139373710?text=Halo%20Evan%20UPVC%2C%20saya%20ingin%20konsultasi%20tentang%20Jendela%20Jungkit%20%28Awning%29." rel="noopener">Tanya via WhatsApp</a>
+</div>
 </div>
 </div>
 </div>
 <!-- FOTO 2: Pintu -->
 <div class="gallery-item" data-category="pintu dan jendela">
 <div class="gallery-card">
-<img alt="Kombinasi pintu sliding dan jendela fixed UPVC" decoding="async" height="1040" loading="lazy" src="images/pintu-dan-jendela-upvc-2.jpeg" width="488" role="button" tabindex="0" aria-label="Perbesar foto kombinasi pintu dan jendela UPVC" onclick="openGalleryLightbox(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGalleryLightbox(this)}"/>
+<div class="gallery-media"><img alt="Kombinasi pintu sliding dan jendela fixed UPVC" decoding="async" height="1040" loading="lazy" src="images/pintu-dan-jendela-upvc-2.jpeg" width="488" role="button" tabindex="0" aria-label="Perbesar foto kombinasi pintu dan jendela UPVC" onclick="openGalleryLightbox(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGalleryLightbox(this)}"/></div>
 <div class="gallery-overlay">
 <span class="gallery-cat">Pintu &amp; Jendela UPVC</span>
 <h2>Pintu Sliding dan Jendela Kaca Mati</h2>
 <p>Referensi kombinasi pintu geser dan jendela kaca mati UPVC.</p>
+<div class="gallery-actions">
+<a class="gallery-link" href="katalog.html">Lihat detail produk</a>
+<a class="gallery-wa" href="https://wa.me/6285139373710?text=Halo%20Evan%20UPVC%2C%20saya%20ingin%20konsultasi%20tentang%20Pintu%20Sliding%20dan%20Jendela%20Kaca%20Mati." rel="noopener">Tanya via WhatsApp</a>
+</div>
 </div>
 </div>
 </div>
 <!-- FOTO 3: Jendela -->
 <div class="gallery-item" data-category="jendela">
 <div class="gallery-card">
-<img alt="Jendela casement UPVC dengan bukaan samping" decoding="async" height="1200" loading="lazy" src="images/jendela-casement-upvc-2.jpeg" width="1600" role="button" tabindex="0" aria-label="Perbesar foto jendela casement UPVC" onclick="openGalleryLightbox(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGalleryLightbox(this)}"/>
+<div class="gallery-media"><img alt="Jendela casement UPVC dengan bukaan samping" decoding="async" height="1200" loading="lazy" src="images/jendela-casement-upvc-2.jpeg" width="1600" role="button" tabindex="0" aria-label="Perbesar foto jendela casement UPVC" onclick="openGalleryLightbox(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGalleryLightbox(this)}"/></div>
 <div class="gallery-overlay">
 <span class="gallery-cat">Jendela UPVC</span>
 <h2>Jendela Casement (Swing)</h2>
 <p>Referensi model jendela casement UPVC dengan bukaan samping.</p>
+<div class="gallery-actions">
+<a class="gallery-link" href="produk/jendela-upvc-casement.html">Lihat detail produk</a>
+<a class="gallery-wa" href="https://wa.me/6285139373710?text=Halo%20Evan%20UPVC%2C%20saya%20ingin%20konsultasi%20tentang%20Jendela%20Casement%20%28Swing%29." rel="noopener">Tanya via WhatsApp</a>
+</div>
 </div>
 </div>
 </div>
 <!-- FOTO 4: Pintu -->
 <div class="gallery-item" data-category="pintu">
 <div class="gallery-card">
-<img alt="Pintu lipat UPVC untuk akses garasi atau ruang terbuka" decoding="async" height="1280" loading="lazy" src="images/pintu-lipat-folding-garasi-upvc.jpeg" width="576" role="button" tabindex="0" aria-label="Perbesar foto pintu lipat UPVC" onclick="openGalleryLightbox(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGalleryLightbox(this)}"/>
+<div class="gallery-media"><img alt="Pintu lipat UPVC untuk akses garasi atau ruang terbuka" decoding="async" height="1280" loading="lazy" src="images/pintu-lipat-folding-garasi-upvc.jpeg" width="576" role="button" tabindex="0" aria-label="Perbesar foto pintu lipat UPVC" onclick="openGalleryLightbox(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGalleryLightbox(this)}"/></div>
 <div class="gallery-overlay">
 <span class="gallery-cat">Pintu UPVC</span>
 <h2>Pintu Lipat (Folding Door) Garasi</h2>
 <p>Referensi model pintu lipat UPVC untuk bukaan lebar.</p>
+<div class="gallery-actions">
+<a class="gallery-link" href="pintu.html">Lihat detail produk</a>
+<a class="gallery-wa" href="https://wa.me/6285139373710?text=Halo%20Evan%20UPVC%2C%20saya%20ingin%20konsultasi%20tentang%20Pintu%20Lipat%20%28Folding%20Door%29%20Garasi." rel="noopener">Tanya via WhatsApp</a>
+</div>
 </div>
 </div>
 </div>
 <!-- FOTO 5: Kusen & Partisi -->
 <div class="gallery-item" data-category="pintu dan jendela">
 <div class="gallery-card">
-<img alt="Pintu swing dan jendela kaca mati UPVC" decoding="async" height="576" loading="lazy" src="images/pintu-dan-jendela-upvc.jpeg" width="1280" role="button" tabindex="0" aria-label="Perbesar foto pintu swing dan jendela fixed UPVC" onclick="openGalleryLightbox(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGalleryLightbox(this)}"/>
+<div class="gallery-media"><img alt="Pintu swing dan jendela kaca mati UPVC" decoding="async" height="576" loading="lazy" src="images/pintu-dan-jendela-upvc.jpeg" width="1280" role="button" tabindex="0" aria-label="Perbesar foto pintu swing dan jendela fixed UPVC" onclick="openGalleryLightbox(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGalleryLightbox(this)}"/></div>
 <div class="gallery-overlay">
 <span class="gallery-cat">Pintu &amp; Jendela UPVC</span>
 <h2>Pintu Swing &amp; Jendela Kaca Mati</h2>
 <p>Referensi kombinasi pintu swing dan jendela fixed UPVC.</p>
+<div class="gallery-actions">
+<a class="gallery-link" href="katalog.html">Lihat detail produk</a>
+<a class="gallery-wa" href="https://wa.me/6285139373710?text=Halo%20Evan%20UPVC%2C%20saya%20ingin%20konsultasi%20tentang%20Pintu%20Swing%20%26%20Jendela%20Kaca%20Mati." rel="noopener">Tanya via WhatsApp</a>
+</div>
 </div>
 </div>
 </div>
 <!-- FOTO 6: Pintu -->
 <div class="gallery-item" data-category="pintu">
 <div class="gallery-card">
-<img alt="Pintu sliding UPVC sebagai akses menuju area luar" decoding="async" height="700" loading="lazy" src="images/pintu-sliding-upvc-pintu-geser-upvc-3.jpeg" width="700" role="button" tabindex="0" aria-label="Perbesar foto pintu sliding UPVC" onclick="openGalleryLightbox(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGalleryLightbox(this)}"/>
+<div class="gallery-media"><img alt="Pintu sliding UPVC sebagai akses menuju area luar" decoding="async" height="700" loading="lazy" src="images/pintu-sliding-upvc-pintu-geser-upvc-3.jpeg" width="700" role="button" tabindex="0" aria-label="Perbesar foto pintu sliding UPVC" onclick="openGalleryLightbox(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGalleryLightbox(this)}"/></div>
 <div class="gallery-overlay">
 <span class="gallery-cat">Pintu UPVC</span>
 <h2>Pintu Sliding (geser)</h2>
 <p>Referensi model pintu sliding UPVC untuk akses ke area luar.</p>
+<div class="gallery-actions">
+<a class="gallery-link" href="produk/pintu-upvc-sliding.html">Lihat detail produk</a>
+<a class="gallery-wa" href="https://wa.me/6285139373710?text=Halo%20Evan%20UPVC%2C%20saya%20ingin%20konsultasi%20tentang%20Pintu%20Sliding%20%28geser%29." rel="noopener">Tanya via WhatsApp</a>
 </div>
 </div>
 </div>
 </div>
 </div>
-</section><dialog id="galleryLightbox" aria-label="Tampilan foto galeri" style="border:0;border-radius:16px;padding:12px;max-width:92vw;max-height:92vh;background:#0b1f33;color:#fff"><button type="button" onclick="document.getElementById('galleryLightbox').close()" aria-label="Tutup foto besar" style="position:absolute;right:16px;top:16px;min-width:44px;min-height:44px;border:0;border-radius:50%;font-size:24px;cursor:pointer">×</button><img id="galleryLightboxImage" alt="Foto galeri yang dipilih" width="1040" height="728" loading="lazy" decoding="async" style="display:block;max-width:88vw;max-height:82vh;object-fit:contain;margin:24px auto 0"><p id="galleryLightboxCaption" style="text-align:center;margin:8px 0 0"></p></dialog><script>function filterGallery(category,btn){document.querySelectorAll(".gallery-filter .filter-btn").forEach(b=>b.classList.remove("active"));btn.classList.add("active");document.querySelectorAll(".gallery-item").forEach(item=>{item.style.display=(category==="semua"||item.dataset.category===category)?"block":"none"})}function openGalleryLightbox(image){var dialog=document.getElementById("galleryLightbox");document.getElementById("galleryLightboxImage").src=image.src;document.getElementById("galleryLightboxImage").alt=image.alt;document.getElementById("galleryLightboxCaption").textContent=image.alt;dialog.showModal()}</script></main><footer><div class="container"><div class="footer-grid"><div class="footer-brand"><h2>EVAN UPVC</h2><p>Spesialis kusen, pintu, dan jendela UPVC dengan standar pengerjaan presisi.</p></div><div class="footer-info"><h2>Workshop &amp; Kontak</h2><p><strong>Alamat:</strong> Jl. Dewi Sartika, Jl. Salak No.49, Margahayu, Kec. Bekasi Timur, Kota Bekasi, Jawa Barat 17113</p><p><strong>WhatsApp:</strong> +62 85139373710</p><p><strong>Jam:</strong> Senin–Minggu, 08.00–17.00 WIB</p></div></div><div class="copyright"><p>© 2026 Evan UPVC. All rights reserved.</p></div></div></footer><a class="whatsapp-popup" href="https://wa.me/6285139373710" target="_blank" rel="noopener noreferrer">Chat WhatsApp</a><script>
+</div>
+</section><dialog id="galleryLightbox" aria-label="Tampilan foto galeri" style="border:0;border-radius:16px;padding:12px;max-width:92vw;max-height:92vh;background:#0b1f33;color:#fff"><button type="button" onclick="document.getElementById('galleryLightbox').close()" aria-label="Tutup foto besar" style="position:absolute;right:16px;top:16px;min-width:44px;min-height:44px;border:0;border-radius:50%;font-size:24px;cursor:pointer">×</button><img id="galleryLightboxImage" alt="Foto galeri yang dipilih" width="1040" height="728" loading="lazy" decoding="async" style="display:block;max-width:88vw;max-height:82vh;object-fit:contain;margin:24px auto 0"><p id="galleryLightboxCaption" style="text-align:center;margin:8px 0 0"></p></dialog><script>function filterGallery(category,btn){document.querySelectorAll(".gallery-filter .filter-btn").forEach(b=>b.classList.remove("active"));btn.classList.add("active");document.querySelectorAll(".gallery-item").forEach(item=>{item.style.display=(category==="semua"||item.dataset.category===category)?"flex":"none"})}function openGalleryLightbox(image){var dialog=document.getElementById("galleryLightbox");document.getElementById("galleryLightboxImage").src=image.src;document.getElementById("galleryLightboxImage").alt=image.alt;document.getElementById("galleryLightboxCaption").textContent=image.alt;dialog.showModal()}</script></main><footer><div class="container"><div class="footer-grid"><div class="footer-brand"><h2>EVAN UPVC</h2><p>Spesialis kusen, pintu, dan jendela UPVC dengan standar pengerjaan presisi.</p></div><div class="footer-info"><h2>Workshop &amp; Kontak</h2><p><strong>Alamat:</strong> Jl. Dewi Sartika, Jl. Salak No.49, Margahayu, Kec. Bekasi Timur, Kota Bekasi, Jawa Barat 17113</p><p><strong>WhatsApp:</strong> +62 85139373710</p><p><strong>Jam:</strong> Senin–Minggu, 08.00–17.00 WIB</p></div></div><div class="copyright"><p>© 2026 Evan UPVC. All rights reserved.</p></div></div></footer><a class="whatsapp-popup" href="https://wa.me/6285139373710" target="_blank" rel="noopener noreferrer">Chat WhatsApp</a><script>
 (function(){
  var nav=document.querySelector('.site-navigation');if(!nav)return;
  var menuButton=nav.querySelector('.mobile-nav-toggle');var menu=nav.querySelector('.nav-links');
